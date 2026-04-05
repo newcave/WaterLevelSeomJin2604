@@ -6,7 +6,7 @@
 [![Tests](https://img.shields.io/badge/tests-82%20passed-brightgreen.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**K-Water WaterLevelSim** (C++/Windows 2021) → **Python 3 완전 이식**  
+**K-water WaterLevelSim** (C++/Windows 2021) → **Python 3 완전 이식**  
 scipy 최적화 파이프라인 + Streamlit 대시보드 + 3-이벤트 검증
 
 ---
@@ -128,6 +128,4 @@ pytest tests/ -q --tb=no  # 요약만
 MIT License
 
 ## 🙏 참고
-
-- 원본: K-Water WaterLevelSim (C++/Windows, 2021)
-- 역공학 이식: Claude Sonnet (Anthropic)
+- Claude Sonnet (Anthropic)
