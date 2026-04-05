@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 대용량 NC 파일 (GitHub에 올리지 않음 — NPZ 사용)
+data/*.nc
+
+# 출력물
+output/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
