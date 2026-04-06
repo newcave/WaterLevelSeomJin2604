@@ -107,7 +107,7 @@ with col_r:
         "Python 최적화": [0.743, 0.840, 1.057],
         "원본 EXE": [0.254, 0.795, 5.579],
     })
-    st.dataframe(df2.style.highlight_min(axis=1, color="#E8F5E9"), use_container_width=True)
+    st.dataframe(df2.style.highlight_min(axis=1, color="#E8F5E9", subset=["Python 최적화", "원본 EXE"]), use_container_width=True)
     st.caption("★ Event3: Python(1.057m) < EXE(5.579m) — 견고성 우월")
 
 st.divider()
