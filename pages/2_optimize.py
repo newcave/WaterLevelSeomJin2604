@@ -13,17 +13,25 @@ from waterlevel_sim.npz_loader import load_demo, available_demos, load_uploaded_
 st.set_page_config(page_title="최적화 — WaterLevelSim", page_icon="🟣", layout="wide")
 
 # ─── 사이드바 ────────────────────────────────────────────────── #
+# ─── 사이드바 네비게이션 ──────────────────────────────────────── #
 with st.sidebar:
+    st.image("https://raw.githubusercontent.com/streamlit/streamlit/develop/lib/streamlit/static/favicon.png",
+             width=32)
     st.title("🌊 WaterLevelSim")
     st.caption("섬진강 수위 예측 시스템")
     st.divider()
     st.markdown("### 📌 페이지 이동")
-    if st.button("🏠 홈",              use_container_width=True): st.switch_page("app.py")
-    if st.button("🔵 시뮬레이션",      use_container_width=True): st.switch_page("pages/1_simulation.py")
-    if st.button("🟣 최적화",          use_container_width=True): st.switch_page("pages/2_optimize.py")
-    if st.button("🟢 검증",            use_container_width=True): st.switch_page("pages/3_validate.py")
-    if st.button("🔬 파라미터 탐색기", use_container_width=True): st.switch_page("pages/4_params.py")
+    st.markdown("🏠 **홈** ← 현재 페이지")
+    st.page_link("pages/1_simulation.py", label="🔵 시뮬레이션")
+    st.page_link("pages/2_optimize.py",   label="🟣 최적화")
+    st.page_link("pages/3_validate.py",   label="🟢 검증")
+    st.page_link("pages/4_params.py",     label="🔬 파라미터 탐색기")
     st.divider()
+    st.markdown("""
+**데이터**: 내장 NPZ (NC 불필요)  
+**이벤트**: tesr / tesr2 / tesr3  
+**스테이션**: 섬진강 20개 BP
+""")
 
     st.markdown("### ⚙️ 설정")
     demos  = available_demos()
