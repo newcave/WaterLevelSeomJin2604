@@ -23,11 +23,11 @@ with st.sidebar:
     st.divider()
 
     st.markdown("### 📌 페이지 이동")
-    if st.button("🏠 홈",           use_container_width=True): st.switch_page("app.py")
-    if st.button("🔵 시뮬레이션",   use_container_width=True): st.switch_page("pages/1_🔵_시뮬레이션.py")
-    if st.button("🟣 최적화",       use_container_width=True): st.switch_page("pages/2_🟣_최적화.py")
-    if st.button("🟢 검증",         use_container_width=True): st.switch_page("pages/3_🟢_검증.py")
-    if st.button("🔬 파라미터 탐색기", use_container_width=True): st.switch_page("pages/4_🔬_파라미터탐색기.py")
+    if st.button("🏠 홈",              use_container_width=True): st.switch_page("app.py")
+    if st.button("🔵 시뮬레이션",      use_container_width=True): st.switch_page("pages/1_simulation.py")
+    if st.button("🟣 최적화",          use_container_width=True): st.switch_page("pages/2_optimize.py")
+    if st.button("🟢 검증",            use_container_width=True): st.switch_page("pages/3_validate.py")
+    if st.button("🔬 파라미터 탐색기", use_container_width=True): st.switch_page("pages/4_params.py")
 
     st.divider()
     st.markdown("""
@@ -104,7 +104,6 @@ with col_r:
         "Python 최적화": [0.743, 0.840, 1.057],
         "원본 EXE":     [0.254, 0.795, 5.579],
     })
-    # highlight_min: 숫자 열만 지정 (문자열 포함 오류 방지)
     st.dataframe(
         df2.style.highlight_min(
             axis=1, color="#E8F5E9",
