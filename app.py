@@ -23,11 +23,11 @@ with st.sidebar:
     st.divider()
 
     st.markdown("### 📌 페이지 이동")
-    st.markdown("🏠 **홈** ← 현재 페이지")
-    st.page_link("pages/1_🔵_시뮬레이션.py",      label="시뮬레이션",      icon="🔵")
-    st.page_link("pages/2_🟣_최적화.py",          label="최적화",          icon="🟣")
-    st.page_link("pages/3_🟢_검증.py",            label="검증",            icon="🟢")
-    st.page_link("pages/4_🔬_파라미터탐색기.py",  label="파라미터 탐색기", icon="🔬")
+    if st.button("🏠 홈",           use_container_width=True): st.switch_page("app.py")
+    if st.button("🔵 시뮬레이션",   use_container_width=True): st.switch_page("pages/1_🔵_시뮬레이션.py")
+    if st.button("🟣 최적화",       use_container_width=True): st.switch_page("pages/2_🟣_최적화.py")
+    if st.button("🟢 검증",         use_container_width=True): st.switch_page("pages/3_🟢_검증.py")
+    if st.button("🔬 파라미터 탐색기", use_container_width=True): st.switch_page("pages/4_🔬_파라미터탐색기.py")
 
     st.divider()
     st.markdown("""
