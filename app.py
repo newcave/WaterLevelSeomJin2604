@@ -23,7 +23,7 @@ with st.sidebar:
     st.divider()
 
     st.markdown("### 📌 페이지 이동")
-    if st.button("🏠 홈",              use_container_width=True): st.switch_page("app.py")
+    st.markdown("🏠 **홈** ← 현재 페이지")
     if st.button("🔵 시뮬레이션",      use_container_width=True): st.switch_page("pages/1_simulation.py")
     if st.button("🟣 최적화",          use_container_width=True): st.switch_page("pages/2_optimize.py")
     if st.button("🟢 검증",            use_container_width=True): st.switch_page("pages/3_validate.py")
