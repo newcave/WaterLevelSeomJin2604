@@ -23,7 +23,7 @@ with st.sidebar:
     st.divider()
 
     st.markdown("### 📌 페이지 이동")
-    st.page_link("app.py",                        label="🏠 홈",           icon="🏠")
+    st.markdown("🏠 **홈** ← 현재 페이지")
     st.page_link("pages/1_🔵_시뮬레이션.py",      label="시뮬레이션",      icon="🔵")
     st.page_link("pages/2_🟣_최적화.py",          label="최적화",          icon="🟣")
     st.page_link("pages/3_🟢_검증.py",            label="검증",            icon="🟢")
